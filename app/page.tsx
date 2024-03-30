@@ -1,8 +1,14 @@
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import Projects from "@/components/Projects";
+
 
 export default function Home() {
   return (
-    <div>
-      <h1>Mert Çetin</h1>
-    </div>
+    <>
+      <About />
+      <Projects />
+      <Contact />
+    </>
   );
 }

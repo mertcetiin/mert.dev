@@ -1,47 +1,36 @@
 "use client";
 
-
 function Contact() {
 
     return (
         <section id='contact' className='flex flex-col text-center justify-center items-center mt-[30px] px-4'>
             <h1 className='text-2xl md:text-4xl font-extrabold'>Get in touch</h1>
-            <form
-
-            >
+            <form >
                 <div className='mt-[47px] flex gap-x-[37px]'>
-                    <input
-                        type="text"
+                    <input type="text" placeholder='Name'
                         name="name"
 
-                        placeholder='Name'
                         className='border-b-2 sm:w-[358px] w-full bg-customBackground pb-[10px] outline-none text-customGray400'
                     />
-                    <input
-                        type="text"
+                    <input type="text" placeholder='Last name'
                         name="lastname"
 
-                        placeholder='Last name'
                         className='border-b-2 sm:w-[358px] w-full bg-customBackground pb-[10px] outline-none text-customGray400'
                     />
                 </div>
 
                 <div className='mt-[47px]'>
-                    <input
-                        type="email"
-                        name="senderEmail"
+                    <input type="text" placeholder='Email'
+                        name="email"
 
-                        placeholder='Email'
                         className='border-b-2 bg-customBackground sm:w-[750px] w-full pb-[10px] outline-none text-customGray400'
                     />
                 </div>
 
                 <div className='mt-[47px]'>
-                    <input
-                        type="text"
+                    <input type="text" placeholder='Message'
                         name="message"
 
-                        placeholder='Message'
                         className='border-2 bg-customBackground sm:w-[750px] w-full h-[109px] pb-[10px] 
                         outline-none pl-[10px] text-customGray400'
                     />

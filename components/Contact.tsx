@@ -1,75 +1,47 @@
 "use client";
-import { useState } from 'react';
+
 
 function Contact() {
-
-    const [formData, setFormData] = useState({
-        name: '',
-        lastname: '',
-        email: '',
-        message: '',
-    });
-
-    const handleSubmit = async (e: any) => {
-        e.preventDefault();
-
-        try {
-            const response = await fetch('/api/contact', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-            const data = await response.json();
-            if (data.success) {
-                alert('Message sent successfully!');
-            } else {
-                alert('Failed to send message. Please try again later.');
-            }
-        } catch (error) {
-            console.log('Error sending message:', error);
-            alert('Failed to send message. Please try again later.');
-        }
-    };
-
-    const handleChange = (e: any) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
-    };
 
     return (
         <section id='contact' className='flex flex-col text-center justify-center items-center mt-[30px] px-4'>
             <h1 className='text-2xl md:text-4xl font-extrabold'>Get in touch</h1>
-            <form onSubmit={handleSubmit}>
+            <form
+
+            >
                 <div className='mt-[47px] flex gap-x-[37px]'>
-                    <input type="text" placeholder='Name'
+                    <input
+                        type="text"
                         name="name"
-                        value={formData.name}
-                        onChange={handleChange}
+
+                        placeholder='Name'
                         className='border-b-2 sm:w-[358px] w-full bg-customBackground pb-[10px] outline-none text-customGray400'
                     />
-                    <input type="text" placeholder='Last name'
+                    <input
+                        type="text"
                         name="lastname"
-                        value={formData.lastname}
-                        onChange={handleChange}
+
+                        placeholder='Last name'
                         className='border-b-2 sm:w-[358px] w-full bg-customBackground pb-[10px] outline-none text-customGray400'
                     />
                 </div>
 
                 <div className='mt-[47px]'>
-                    <input type="text" placeholder='Email'
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
+                    <input
+                        type="email"
+                        name="senderEmail"
+
+                        placeholder='Email'
                         className='border-b-2 bg-customBackground sm:w-[750px] w-full pb-[10px] outline-none text-customGray400'
                     />
                 </div>
 
                 <div className='mt-[47px]'>
-                    <input type="text" placeholder='Message'
+                    <input
+                        type="text"
                         name="message"
-                        value={formData.message}
-                        onChange={handleChange}
+
+                        placeholder='Message'
                         className='border-2 bg-customBackground sm:w-[750px] w-full h-[109px] pb-[10px] 
                         outline-none pl-[10px] text-customGray400'
                     />

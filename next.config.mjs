@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    env: {
+        EMAILJS_ID: process.env.EMAILJS_ID
+    }
+};
 
 export default nextConfig;

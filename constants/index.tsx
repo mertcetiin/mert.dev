@@ -57,9 +57,9 @@ export const PROFILE_LINKS = [
         iconHover: 'customBlue500',
     },
     {
-        href: 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=mrtctn506@gmail.com',
-        key: 'email',
-        label: 'Email',
+        href: 'https://www.instagram.com/mertt.cetiin/',
+        key: 'instagram',
+        label: 'Instagram',
         iconHover: 'customTeal500',
     },
 ]

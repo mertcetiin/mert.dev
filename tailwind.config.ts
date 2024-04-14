@@ -25,7 +25,7 @@ const config: Config = {
         customBlue500: '#3B82F6',
         customGray600: '#4b5563',
         customGray400: '#9CA3AF',
-        customTeal500: '#14B8A6',
+        customTeal500: '#BC2A8D',
         customGray800: '#1F2937',
         customPrimary: '#539DF3',
       },

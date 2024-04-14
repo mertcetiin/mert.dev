@@ -1,7 +1,7 @@
 import { PROFILE_INFO, PROFILE_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter, FaRegEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa';
 
 
 function About() {
@@ -55,7 +55,7 @@ function About() {
                                     {profile.key === 'github' && <FaGithub className="text-customGray800 hover:text-customWhite" />}
                                     {profile.key === 'linkedın' && <FaLinkedin className="text-customBlue600 hover:text-customWhite" />}
                                     {profile.key === 'twitter' && <FaTwitter className="text-customBlue500 hover:text-customWhite" />}
-                                    {profile.key === 'email' && <FaRegEnvelope className="text-customTeal500 hover:text-customWhite" />}
+                                    {profile.key === 'instagram' && <FaInstagram className="text-customTeal500 hover:text-customWhite" />}
                                 </Link>
                             </div>
                         ))}

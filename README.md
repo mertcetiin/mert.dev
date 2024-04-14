@@ -29,3 +29,4 @@ This project contains a Next.js application used to create my personal portfolio
    ```bash
    npm install
    npm run dev
+   npm install --save sweetalert2 sweetalert2-react-content

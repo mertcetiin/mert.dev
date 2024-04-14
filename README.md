@@ -1,4 +1,4 @@
-# Next.js
+# Next.js + TailwindCss
 
 # Portfolio
 
@@ -22,7 +22,7 @@ This project contains a Next.js application used to create my personal portfolio
 
    ```bash
    cd Desktop/portfolio
-   git clone https://github.com/mertcetiin/Mert.dev.git
+   git clone https://github.com/mertcetiin/mert.dev.git
 
 2. Install dependencies and start the development server:
 

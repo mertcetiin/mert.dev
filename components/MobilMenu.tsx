@@ -21,11 +21,11 @@ function MobilMenu({ setIsOpenMenu, isOpenMenu }: any) {
                         )
                     } else if (menu.title === 'close') {
                         return (
-                            <Link href={menu.href} key={index}
+                            <button key={index}
                                 className='text-customWhite flex flex-col text-center items-center text-2xl border rounded-full p-2 bg-customPrimary border-none'
                                 onClick={() => setIsOpenMenu(!isOpenMenu)}>
                                 {menu.iconItem}
-                            </Link>
+                            </button>
                         )
                     } else {
                         return (

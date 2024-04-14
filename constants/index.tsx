@@ -45,7 +45,7 @@ export const PROFILE_LINKS = [
         iconHover: 'customGray800',
     },
     {
-        href: 'https://www.linkedin.com/in/mert-çetin-219b671b0/',
+        href: 'https://www.linkedin.com/in/mertcetin-dev/',
         key: 'linkedın',
         label: 'Linkedın',
         iconHover: 'customBlue600',
@@ -137,7 +137,7 @@ export const FOOTER_LINKS = [
         iconItem: <FaGithub />,
     },
     {
-        href: 'https://www.linkedin.com/in/mert-çetin-219b671b0/',
+        href: 'https://www.linkedin.com/in/mertcetin-dev/',
         iconItem: <FaLinkedin />,
     },
     {
